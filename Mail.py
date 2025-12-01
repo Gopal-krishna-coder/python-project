@@ -9,11 +9,12 @@ RECEIVER = ""
 msg = EmailMessage()
 msg["From"] = EMAIL
 msg["To"] = RECEIVER
-msg["Subject"] = "Hello Pruthvi..."
+msg["Subject"] = "Hello akash..."
 msg.set_content("This email was shared by Python Code...")
 
 context = ssl.create_default_context()
 
 with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
     server.login(EMAIL, APP_PASSWORD)
+
     server.send_message(msg)
