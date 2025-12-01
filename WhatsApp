@@ -8,7 +8,7 @@ client = Client(account_sid, auth_token)
 from_whatsapp_number = "whatsapp:"
 to_whatsapp_number = "whatsapp:"
 
-message_body = "Hello This is Prthviraj."
+message_body = "Hello This is Aditya Kumar."
 
 message = client.messages.create(
     body=message_body,
@@ -17,4 +17,5 @@ message = client.messages.create(
 )
 
 print("Message Status:", message.status)
+
 print("Message SID:", message.sid)
